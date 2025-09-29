@@ -1,0 +1,8 @@
+.card {
+    border: 3px solid teal;
+    border-radius: 20px;
+}
+.img-radius {
+    border-radius: 20px;
+    width: 250px;
+}

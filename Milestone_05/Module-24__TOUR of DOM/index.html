@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+<style>
+    .mihi {
+        font-weight: 100;
+    }
+    .big {
+        font-size: 3rem;
+    }
+    .alada-color {
+        color: aqua;
+    }
+
+</style>
+<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <h1 id="first-question">Tumi kon kon jaigai ghurecho akhon porjonto</h1>
+            <ul>
+                <li class="changable-item">Bangladesh</li>
+                <li>Barishal</li>s
+                <li>Chattagram</li>
+                <li class="changable-item">Dhaka</li>
+                <li>Kualalampur</li>
+                <li>Malesya</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Ajke ki ranna hoyeche basai</h1>
+            <ul>
+                <li>Vat</li>
+                <li class="changable-item">Torkari</li>
+                <li>Begun</li>
+                <li>Potol</li>
+                <li>Biryani</li>
+                <li>Alu</li>
+                <li>Moja kore khai</li>
+            </ul>
+        </section>
+    </header>
+
+    <main id="main-container">
+        <section>
+            <h1>Players</h1>
+            <ul>
+                <li>Ronaldo</li>
+                <li>Embappe</li>
+                <li>Neymar</li>
+                <li>Pele</li>
+                <li>D Maria</li>
+            </ul>
+        </section>
+        <section id="rootin-section">
+            <h1 id="rootin">Tomar saradiner rootin bolo</h1>
+            <ul id="rootin-list">
+                <li>Sokale ghum Theke uthi</li>
+                <li>Tarpor vat khai</li>
+                <li class="changable-item">Abar ghumai aktu</li>
+                <li class="changable-item">Porar maje maje mobile tipi</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // const correctionAddress = document.getElementsByTagName('h1');
+        // for(const correction of correctionAddress) {
+        //     console.log(correction.innerText);
+        // }
+        
+        // console.log(correctionAddress);
+
+        // getElementsByClassName and getElementById
+        // const khabarItem = document.getElementsByClassName('changable-item');
+        // for(const item of khabarItem) {
+        //     console.log(item.innerText);
+        // }
+        // console.log(khabarItem);
+
+        // const headingId = document.getElementById('first-question');
+        // console.log(headingId.innerText);
+        // headingId.innerText = 'Tumi mone hocche onek jaigai Ghurecho...'
+        // console.log(headingId.innerText);
+
+        // const smallSeceltion = document.querySelector()
+        // querySelector() হলো মুলত CSS এর মতো সেলেক্ট করে।
+
+        const getElement = document.getElementById('rootin');
+
+
+
+    </script>
+    
+    <script src="./styles/cssInJs.js"></script>
+    <script src="js/child.js"></script>
+    <script src="js/append.js"></script>
+    
+</body>
+</html>

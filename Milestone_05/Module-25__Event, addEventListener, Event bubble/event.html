@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <h1 id="page-title">Event Handler</h1>
+    <button id="btn-update-title">Update title</button>
+    <br><br><br>
+    <p id="user-activity">No User Available</p>
+    <button id="login-btn">Login</button>
+
+    <br><br><br>
+
+    <p id="name">Name: doesn't input</p>
+    <input type="text" id="input-name" placeholder="Write your name">
+    <button id="btn-name-update" >Name Update</button>
+    
+    <br><br>
+    
+    <p id="number">Number: +880 1*** ******</p>
+    <input type="number" id="input-number" placeholder="write your number">
+    <button id="btn-number-update" >Number Update</button>
+    
+    
+    <br><br>
+    
+    <p id="mail">E-mail: yourmail@gmail.com</p>
+    <input type="email" id="input-mail" placeholder="write your email">
+    <button id="btn-mail-update" >Number Update</button>
+
+
+    <script>
+                  
+        
+        document.getElementById('btn-mail-update')
+        .addEventListener('click', function(){
+            const inputMail = document.getElementById('input-mail');
+            const mail = 'E-mail: ' + inputMail.value;
+            const updateMail = document.getElementById('mail');
+            updateMail.innerText = mail;
+        })
+        
+
+    </script>
+
+    <script src="js/handler.js"></script>
+
+</body>
+</html>

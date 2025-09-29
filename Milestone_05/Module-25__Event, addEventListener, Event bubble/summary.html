@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events Summary</title>
+</head>
+<body>
+    <h1>DOM Events Summary</h1>
+    <input type="text" placeholder="Your Name" id="input-text">
+    <button onclick="" id="btn-add-name">AddName</button>
+    <div id="input-center">
+
+    </div>
+    <script>
+        // function addName(){
+        //     console.log('btn clicked');
+        // }
+        
+        // declare the event
+        document.getElementById('btn-add-name').addEventListener('click', function(){
+            // get the input value
+            const inputValue = document.getElementById('input-text');
+            const value = inputValue.value;
+
+            // making the child who is send the parent
+            const p = document.createElement('p');
+            p.innerText = value;
+            
+            // get the parent who is recive the value
+            const inputCenter = document.getElementById('input-center');
+
+            // append child
+            inputCenter.appendChild(p);
+
+            // at last emty the input area
+            inputValue.value = ' ';
+
+        })
+
+
+
+    </script>
+</body>
+</html>

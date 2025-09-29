@@ -1,0 +1,11 @@
+1. what is JavaScript?
+--> JavaScript high level, interpreted programming language.
+
+high level:
+0, 1, =, true/false এর উপরে কাজ করে।
+// যে ভাষা মানুষের ভাষার কাছাকাছি মিলে যায়। সেটা ততটা high level programming language bole. -> high level language means human friendly language
+// যে ভাষা কম্পিউটারের ভাষার কাছাকাছি মিলে যায়। সেটা ততটা Low level programming language bole. -> low level language means computer friendly language.
+
+interpreted programming language:
+যে কোডগুলো লাইন বাই লাইন/ উপর থেকে নিচের দিকে রিডিং হয় সেটাকেই interpreted বলে। এখানে কোডের পরিমাণ বেশি হলে interpreted হতে সময় লাগে।
+

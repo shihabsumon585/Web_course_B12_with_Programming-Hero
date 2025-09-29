@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Flex + Grid Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #34495e;
+    }
+
+    nav a {
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: #ecf0f1;
+      padding: 15px;
+    }
+
+    .main-content {
+      background-color: #bdc3c7;
+      padding: 15px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        text-align: center;
+        border-top: 1px solid #3e5b70;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>আমার ট্রাভেল ব্লগ</h1>
+  </header>
+
+  <nav>
+    <a href="#">হোম</a>
+    <a href="#">ব্লগ</a>
+    <a href="#">আমাদের সম্পর্কে</a>
+    <a href="#">যোগাযোগ</a>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>সাইডবার</h3>
+      <p>ক্যাটেগরি, লিংক ইত্যাদি এখানে থাকবে।</p>
+    </aside>
+
+    <section class="main-content">
+      <h2>ভ্রমণের গল্প</h2>
+      <p>এখানে আপনার ভ্রমণ নিয়ে ব্লগ কনটেন্ট বা প্রজেক্ট থাকবে।</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 আমার ট্রাভেল ব্লগ | সর্বস্বত্ব সংরক্ষিত</p>
+  </footer>
+
+</body>
+</html>
