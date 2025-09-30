@@ -3,9 +3,10 @@ import { Suspense } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Pricing from './components/Pricing/Pricing';
+import Charts from './components/Charts/Charts';
 
 
-const promiseData = fetch("PricingData.json").then(res => res.json());
+// const promiseData = fetch("PricingData.json").then(res => res.json());
 
 function App() {
 
@@ -13,16 +14,18 @@ function App() {
   return (
     <>
       <header className='max-w-[1140px] mx-auto'>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
       </header>
       <main className='max-w-[1140px] mx-auto'>
-        <Suspense
+        {/* <Suspense
         fallback={<p className='text-center mt-40'>Loading Data......</p>}
         >
           <Pricing
           promiseData={promiseData}
           ></Pricing>
-        </Suspense>
+        </Suspense> */}
+
+        <Charts></Charts>
       </main>
     </>
   )
