@@ -25,5 +25,5 @@ export default Root;
 /**
  * 1. use: usersPromise > Suspennse > promise > use(usersPromise)
  * 2. [ less used so far ] > useState + useEffect ( () => {}, [])
- * 3. load data before router component is rendered
+ * 3. set loader in the rout defination: load data before router component is rendered
  */
