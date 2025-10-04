@@ -19,11 +19,11 @@ const ControlledForm = () => {
         console.log(e.target.value);
         console.log(password.length);
 
-        // if(password.length < 6) {
-        //     setError("password must be 6 character or longer");
-        // } else {
-        //     setError("");
-        // }
+        if(password.length < 6) {
+            setError("password must be 6 character or longer");
+        } else {
+            setError("");
+        }
     }
 
     return (
