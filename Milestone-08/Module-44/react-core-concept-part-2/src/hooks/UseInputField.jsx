@@ -7,6 +7,6 @@ const useInputField = (defaultValue) => {
         setFieldValue(e.target.value);
     }
 
-    return [fieldValue, handleFiledOnChange];
+    return [fieldValue, handleFiledOnChange]; // array return
 }
 export default useInputField;
