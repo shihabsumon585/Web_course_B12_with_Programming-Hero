@@ -7,6 +7,7 @@ import HookForm from './components/HookForm.jsx/HookForm'
 import ProductManagement from './components/ProductManagement/ProductManagement'
 import SimpleForm from './components/SimpleForm/SimpleForm'
 import UnControlledForm from './components/UnControlledForm/UnControlledForm'
+import Practice from './practice/Practice/Practice'
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
       {/* <SimpleForm></SimpleForm> */}
       {/* <HookForm></HookForm> */}
       {/* <ProductManagement></ProductManagement> */}
+      {/* <Practice></Practice> */}
       <FamilyTree></FamilyTree>
+      
       
     </>
   )
